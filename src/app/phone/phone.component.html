@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row" style="margin-top: 30px;">
+    <div class="col survey-title text-center">휴대폰 로그인</div>
+  </div>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col">
+      <p style="margin-bottom: 5px; font-size:13px;">통신사</p>
+      <select name="phoneCompany" class="form-control" [(ngModel)]="phoneCompany">
+        <option value="SKT" selected="true">SKT</option>
+        <option value="KT">KT</option>
+        <option value="LG">LG</option>
+      </select>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col">
+      <p style="margin-bottom: 5px;font-size:13px;">휴대폰 번호</p>
+      <div class="row">
+        <div class="col" style="padding-right: 5px;">
+          <input type="text" pattern="\d*" maxlength="3" class="form-control" [(ngModel)]="phone1">
+        </div><span style="margin-top: 12px;">-</span>
+        <div class="col" style="padding-right: 5px; padding-left:5px;">
+          <input type="text" pattern="\d*" maxlength="4" class="form-control" [(ngModel)]="phone2">
+        </div><span style="margin-top: 12px;">-</span>
+        <div class="col" style="padding-left: 5px;">
+          <input type="text" pattern="\d*" maxlength="4" class="form-control" [(ngModel)]="phone3">
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-block pre-btn" style="margin-top: 20px;" (click)="send()">인증번호 전송</button>
+  <br>
+  <div class="row">
+    <div class="col">
+      <p style="margin-bottom: 5px;font-size:13px;">인증 번호</p>
+      <div class="row">
+        <div class="col">
+          <input type="number" class="form-control" [(ngModel)]="number" placeholder="인증번호 입력">
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-block next-btn" style="margin-top: 20px;" (click)="verify()">인증번호 확인</button>
+</div>

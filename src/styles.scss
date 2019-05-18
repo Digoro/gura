@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
+
+* { 
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; 
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+}
+
+.form-control {
+  border-radius: 2px;
+  border: solid 1px #f0f0f0;
+  background-color: #fafafc;
+  height: 50px;
+}
+
+input::placeholder {
+  font-size: 15px;
+  color: #cfcfcf;
+  opacity: 0.4 !important;
+}
+
+.btn {
+  border-radius: 2px;
+  padding:  14px 64px 14px 64px;
+  height: 50px;
+  font-size: 14px;
+}
+
+.btn:active {
+  background: #969696;
+}
+
+.btn:focus {
+  background: #969696;
+}
+
+.survey-title {
+  color: #5a5a5a;
+  font-size: 23px;
+}
+
+.next-btn {
+  background: #747474;
+  color: white;
+}
+
+.pre-btn {
+  border: 1px solid #969696;
+}
